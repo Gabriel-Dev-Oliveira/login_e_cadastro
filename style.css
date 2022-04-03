@@ -1,0 +1,98 @@
+body{
+    background-image:url('https://inspirationhut.net/wp-content/uploads/2013/05/201.png');
+}
+
+.wrapper{
+    width: 360px;
+    padding: 20px 50px 50px 50px;
+    align-self: center;
+    background-color: #E3E6F3;
+    border-radius: 4%;
+    box-shadow: 300px rgba(0, 0, 0, 0.123);
+    position: absolute;
+    top: 17%;
+    left: 38%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.logo{
+    height: 60px;
+    width: 70px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+.botao_registo input{
+    background-color: transparent;
+    color: #088178;
+    border-color: #1a1a1a;
+    border-radius: 20%;
+    padding: 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.botao_registo input:hover{
+    color: rgb(245, 245, 220);
+    background-color: #088178;
+}
+
+.botao_registo span input:hover {
+    color: #ffffff;
+    background-color: #c72626;
+}
